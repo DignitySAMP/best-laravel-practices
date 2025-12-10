@@ -29,6 +29,13 @@ export default defineConfig({
         // generate a components shim to help our IDE with autocompletion:
         dts: resolve(currentDir, 'components.d.ts'),
       }),
+      { // custom plugin to extend the default vite watcher (by default only srcDir) 
+        // to watch custom assigned directories
+        name: 'watcher',
+        configureServer(server) {
+          server.watcher.add([componentsDir])
+        },
+      },
       // auto import composables and utils
       AutoImport({
         imports: ['vue', 'vitepress'],
