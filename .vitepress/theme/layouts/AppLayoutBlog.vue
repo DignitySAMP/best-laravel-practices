@@ -14,7 +14,7 @@ import { data } from '../../data/blog.data'
     </h3>
 
     <section class="space-y-4">
-      <AppLayoutBlogCard v-for="(post, index) in data" :key="index" :post="post"/>
+      <AppBlogCard v-for="(post, index) in data" :key="index" :post="post"/>
     </section>
 
     <div>
