@@ -3,9 +3,14 @@ import { fileURLToPath } from 'node:url'
 
 import { defineConfig } from 'vitepress'
 import Components from 'unplugin-vue-components/vite'
+import AutoImport from 'unplugin-auto-import/vite'
 
 const currentDir = dirname(fileURLToPath(import.meta.url))
 const componentsDir = resolve(currentDir, 'theme', 'components')
+
+
+const composablesDir = resolve(currentDir, 'theme', 'composables')
+const utilsDir = resolve(currentDir, 'theme', 'utils')
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -23,6 +28,16 @@ export default defineConfig({
         include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
         // generate a components shim to help our IDE with autocompletion:
         dts: resolve(currentDir, 'components.d.ts'),
+      }),
+      // auto import composables and utils
+      AutoImport({
+        imports: ['vue', 'vitepress'],
+        dirs: [
+          composablesDir,
+          utilsDir
+        ],
+        // generate an auto-imports shim to aid with 
+        dts: resolve(currentDir, 'auto-imports.d.ts'),
       }),
     ]
   }
