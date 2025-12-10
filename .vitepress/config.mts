@@ -15,12 +15,14 @@ const utilsDir = resolve(currentDir, 'theme', 'utils')
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lang: 'en-GB',
   title: "Laravel Best Practices",
   description: "A revival of alexeymezenin's laravel-best-practices repository.",
   srcDir: 'src',
   markdown: {
     theme: 'github-dark'
   },
+  // TODO: add meta tags: https://vitepress.dev/reference/site-config#head
   vite: {
     plugins: [
       // components are auto imported with unplugin, see https://github.com/unplugin/unplugin-vue-components
