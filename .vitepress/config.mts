@@ -21,7 +21,7 @@ export default defineConfig({
   srcDir: 'src',
   cleanUrls: true, // remove .html at each page
   markdown: {
-    theme: 'github-dark'
+    theme: 'one-dark-pro' // looks closest to phpstorm default theme
   },
   // TODO: add meta tags: https://vitepress.dev/reference/site-config#head
   vite: {
@@ -30,7 +30,7 @@ export default defineConfig({
       Components({
         dirs: [
           componentsDir, // directory of our components
-          layoutsDir // directory of our 'pages' (areas of the application that need a custom template, i.e. blog posts differ from index)
+          layoutsDir // directory of our 'pages' (areas of the application that need a custom template, i.e. resource posts differ from index)
         ],
         include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
         // generate a components shim to help our IDE with autocompletion:

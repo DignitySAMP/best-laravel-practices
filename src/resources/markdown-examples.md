@@ -1,7 +1,10 @@
 ---
+layout: view-resource
 title: "Markdown Extension Examples in Vitepress"
 description: "Learn some of the built-in markdown extensions provided by VitePress"
 date: 2025-10-14T00:00:00.000Z
+author: "Jane Doe"
+tags: Five, Six, Seven, Eight
 ---
 # Markdown Extension Examples
 

@@ -4,7 +4,7 @@ import { createContentLoader } from 'vitepress'
 declare const data: ContentData[]
 export { data }
 
-export default createContentLoader('blog/*.md', {
+export default createContentLoader('resources/*.md', {
     transform: (data) => {
         return data.sort((a, b) => {
             return (

@@ -5,6 +5,10 @@ div[class*="language-"] {
     margin: 1.75em 0;
 }
 
+div[class*="language-"]>pre {
+    padding: 1.5rem;
+}
+
 /* button that lets people copy the code in the code block */
 div[class*="language-"]>button.copy {
     /* move to top right of the code block*/

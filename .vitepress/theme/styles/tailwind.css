@@ -6,6 +6,10 @@
 
 
 /* improves some of the default prose settings, also an example of how to customize it */
+.prose {
+    max-width: 100%;
+}
+
 .prose code {
     padding: 0 0.25rem;
     border-radius: 0;
