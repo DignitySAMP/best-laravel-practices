@@ -1,2 +1,4 @@
 @import "tailwindcss";
-@config "./tailwind.config.cjs";
+
+@source '../../../../src/**/*.md';
+@source '../../**/*.{vue,ts}';
