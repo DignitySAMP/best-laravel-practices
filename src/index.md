@@ -23,3 +23,17 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+Hello World.
+
+**This** is __markdown__.
+
+
+```js
+const func = () => {
+  console.log("Hello World");
+}
+```
+
+[Go to the api-examples page](/api-examples)
+
+[Go to the markdown-examples page](/markdown-examples)
