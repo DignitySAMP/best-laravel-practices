@@ -1,17 +1,23 @@
 <template>
     <AppLayoutHeader/>
     <AppLayoutBody>
-        <div id="top" class="flex text-gray-500 gap-2 mt-8 mb-8">
-            <IconRedirect class="size-6"/>
-            <a href="/resources" class="hover:underline">
-                Back to Library
-            </a>
-        </div>
-        <figure class="mt-8 w-full px-6 py-4 border border-gray-300 rounded-lg flex flex-col gap-2 h-fit">
-            <span class="font-semibold text-3xl tracking-tight px-3 py-1 bg-laravel text-white w-fit rounded-lg">
-                {{ frontmatter.title }}
+        <a href="/resources" id="top" class="flex text-gray-500 gap-2 mt-8 mb-8 items-center hover:underline group">
+            <IconRedirect class="size-6" />
+            <span>Back to Library</span>
+        </a>
+
+        <figure class="mt-8 w-full px-8 py-8 border border-gray-300 rounded-xl flex flex-row gap-8 h-fit">
+            <span class="font-semibold text-lg tracking-tight px-3 py-1 bg-laravel text-white w-fit h-fit rounded-full">
+                Tip #{{ frontmatter.no }}
             </span>
-            <span class="text-1xl">{{ frontmatter.description }}</span>
+            <div class="flex flex-col gap-4">
+                <span class="font-semibold text-4xl tracking-tight">
+                    {{ frontmatter.title }}
+                </span>
+                <span class="text-lg text-gray-500">
+                    {{ frontmatter.description }}
+                </span>
+            </div>
         </figure>
 
         <section class="mt-8 grid grid-cols-[1fr_auto_1fr]">
@@ -26,7 +32,7 @@
             </article>
 
             <aside v-if="outline.length > 0" class="min-w-64 sticky top-4 self-start">
-                <div class="pl-8 border-l border-gray-200">
+                <div class="pl-8">
                     <div class="flex items-center mb-4 gap-2">
                         <h2 class="font-semibold text-gray-700">On this page</h2>
                         <a href="#top" class="text-xs text-gray-500">Back to Top</a>

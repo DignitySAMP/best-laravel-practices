@@ -5,6 +5,7 @@ description: "Learn the usage of some of the runtime APIs provided by VitePress"
 date: 2026-09-14T00:00:00.000Z
 author: "John Doe"
 tags: One, Two, Three, Four
+no: 001
 ---
 
 # Runtime API Examples
