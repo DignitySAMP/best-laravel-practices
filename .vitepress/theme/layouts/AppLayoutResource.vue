@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 
 const { frontmatter } = useData()
-import { data } from '../../data/blog.data'
+import { data } from '../../data/resource.data'
 </script>
 
 <template>
@@ -25,7 +25,7 @@ import { data } from '../../data/blog.data'
     </div>
     
     <section class="mt-8 divide-y divide-gray-400 flex flex-col gap-6 px-16">
-      <AppBlogCard v-for="(post, index) in data" :key="index" :post="post"/>
+      <AppResourceCard v-for="(post, index) in data" :key="index" :post="post"/>
     </section>
 
 

@@ -30,7 +30,7 @@ export default defineConfig({
       Components({
         dirs: [
           componentsDir, // directory of our components
-          layoutsDir // directory of our 'pages' (areas of the application that need a custom template, i.e. blog posts differ from index)
+          layoutsDir // directory of our 'pages' (areas of the application that need a custom template, i.e. resource posts differ from index)
         ],
         include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
         // generate a components shim to help our IDE with autocompletion:

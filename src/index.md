@@ -15,7 +15,7 @@ const func = () => {
 }
 ```
 
-[Go to the api-examples page](/blog/api-examples)
+[Go to the api-examples page](/resources/api-examples)
 
-[Go to the markdown-examples page](/blog/markdown-examples)
+[Go to the markdown-examples page](/resources/markdown-examples)
 

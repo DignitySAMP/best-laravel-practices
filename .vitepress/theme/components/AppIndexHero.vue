@@ -12,7 +12,7 @@
             </span>
             <div class="w-full grid grid-cols-2 gap-6">
 
-                <AppFormButton href="/blog">
+                <AppFormButton href="/resources">
                     Browse Library
                 </AppFormButton>
 

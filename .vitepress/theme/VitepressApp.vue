@@ -1,7 +1,7 @@
 <template>
     <AppLayoutError v-if="page.isNotFound"/>
     <AppLayoutIndex v-else-if="frontmatter.layout === 'home'" />
-    <AppLayoutBlog v-else-if="frontmatter.layout === 'blog'" />
+    <AppLayoutResource v-else-if="frontmatter.layout === 'resources'" />
     <AppLayoutDefault v-else>
         <Content />
     </AppLayoutDefault>
