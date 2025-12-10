@@ -1,18 +1,26 @@
 <script lang="ts" setup>
+
+const { frontmatter } = useData()
 import { data } from '../../data/blog.data'
 </script>
 
 <template>
   <section>
-    <h1 class="text-3xl font-bold underline">All blogs</h1>
+    <h1 class="text-3xl font-bold underline">
+      {{ frontmatter.title }}
+    </h1>
+    <h3 class="text-lg">
+      {{frontmatter.description}}
+    </h3>
 
-    <div class="mt-4 flex flex-col gap-2">
-      <div v-for="post in data" class="flex flex-col gap-1">
-        <span class="font-bold">{{ post.frontmatter.title }}</span>
-        <span>{{ post.frontmatter.description }}</span>
-        <span class="text-sm">{{ new Date(post.frontmatter.date).toLocaleString() }}</span>
-        <a :href="post.url" class="text-blue-500 hover:underline">{{ post.url }}</a>
-      </div>
+    <section class="space-y-4">
+      <AppLayoutBlogCard v-for="(post, index) in data" :key="index" :post="post"/>
+    </section>
+
+    <div>
+      <a href="/" class="text-blue-500 hover:underline">
+        Back to home
+      </a>
     </div>
 </section>
 </template>
