@@ -9,8 +9,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 
 const currentDir = dirname(fileURLToPath(import.meta.url))
 const componentsDir = resolve(currentDir, 'theme', 'components')
-
-
+const layoutsDir = resolve(currentDir, 'theme', 'layouts')
 const composablesDir = resolve(currentDir, 'theme', 'composables')
 const utilsDir = resolve(currentDir, 'theme', 'utils')
 
@@ -25,7 +24,8 @@ export default defineConfig({
       // components are auto imported with unplugin, see https://github.com/unplugin/unplugin-vue-components
       Components({
         dirs: [
-          componentsDir // directory of our components
+          componentsDir, // directory of our components
+          layoutsDir // directory of our 'pages' (areas of the application that need a custom template, i.e. blog posts differ from index)
         ],
         include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
         // generate a components shim to help our IDE with autocompletion:
