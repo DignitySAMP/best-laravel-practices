@@ -11,14 +11,14 @@
 
             <section class="flex justify-center items-center gap-12 text-gray-600">
 
-                <div class="flex itens-end">
+                <div class="flex items-center">
                     <span>
                         Browse Topics
                     </span>
                     <IconChevronDown class="size-5"/>
                 </div>
                 
-                <div class="flex itens-center gap-2">
+                <div class="flex items-center gap-2">
 
                     <IconGithub class="size-5"/>
                     <span>
