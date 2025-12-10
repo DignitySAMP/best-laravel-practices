@@ -3,19 +3,3 @@ layout: home
 ---
 
 <AppIndexHero/>
-
-Hello World.
-
-**This** is __markdown__.
-
-
-```js
-const func = () => {
-  console.log("Hello World");
-}
-```
-
-[Go to the api-examples page](/resources/api-examples)
-
-[Go to the markdown-examples page](/resources/markdown-examples)
-
