@@ -4,14 +4,14 @@ import { data } from '../../data/blog.data'
 
 <template>
   <section>
-    <h1>Blog</h1>
+    <h1 class="text-3xl font-bold underline">All blogs</h1>
 
-    <div class="flex flex-col gap-2">
+    <div class="mt-4 flex flex-col gap-2">
       <div v-for="post in data" class="flex flex-col gap-1">
-        <span>{{ post.frontmatter.title }}</span>
+        <span class="font-bold">{{ post.frontmatter.title }}</span>
         <span>{{ post.frontmatter.description }}</span>
-        <span>{{ post.frontmatter.date }}</span>
-        <span>{{ post.url }}</span>
+        <span class="text-sm">{{ new Date(post.frontmatter.date).toLocaleString() }}</span>
+        <a :href="post.url" class="text-blue-500 hover:underline">{{ post.url }}</a>
       </div>
     </div>
 </section>
