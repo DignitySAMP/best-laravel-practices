@@ -3,3 +3,4 @@
 .vitepress/cache
 .vitepress/auto-imports.d.ts
 .vitepress/components.d.ts
+.idea
