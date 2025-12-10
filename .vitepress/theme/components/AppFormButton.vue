@@ -9,7 +9,7 @@
 <script setup lang="ts">
     const props = withDefaults(
         defineProps<{
-            theme?: "primary" | "secondary"
+            theme?: "primary" | "secondary" | "success"
             href?: string | null
         }>(), {
             theme: "primary",
@@ -25,6 +25,10 @@
         switch(props.theme) {
             case "primary": {
                 style.push("bg-red-600 border-red-700 text-red-50 hover:bg-red-500");
+                break;
+            }
+            case "success": {
+                style.push("bg-green-600 border-green-700 text-green-50 hover:bg-green-500");
                 break;
             }
             case "secondary": {

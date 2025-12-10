@@ -25,10 +25,15 @@
 import { useData, Content } from 'vitepress'
 const { page, frontmatter } = useData()
 
+
 const showCookieBanner = ref<boolean>(false);
 onMounted(() => {
-    setTimeout(() => {
-        showCookieBanner.value = true;
-    }, 500)
+
+    // check if the user has already interacted with the cookie banner.
+    if(getCookie('cookie_preference').length <= 0) {
+        setTimeout(() => { // mini delay because animations are cool
+            showCookieBanner.value = true;
+        }, 500)
+    }
 })
 </script>
