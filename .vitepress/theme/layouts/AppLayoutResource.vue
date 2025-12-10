@@ -8,12 +8,10 @@ import { data } from '../../data/resource.data'
   <AppLayoutHeader/>
 
   <AppLayoutBody>
-    <div class="flex text-gray-500 gap-2 mt-8 mb-8">
-      <IconHome class="size-6"/>
-      <a href="/" class="hover:underline">
-        Back to Home
-      </a>
-    </div>
+    <a href="/" class="flex text-gray-500 gap-2 mt-8 mb-8 group hover:underline items-center">
+      <IconHome class="size-6" />
+      <span>Back to Home</span>
+    </a>
 
     <div class="p-6 border border-gray-300 rounded-lg">
       <h1 class="text-3xl">
