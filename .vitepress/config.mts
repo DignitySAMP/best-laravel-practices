@@ -21,7 +21,7 @@ export default defineConfig({
   srcDir: 'src',
   cleanUrls: true, // remove .html at each page
   markdown: {
-    theme: 'github-dark'
+    theme: 'one-dark-pro' // looks closest to phpstorm default theme
   },
   // TODO: add meta tags: https://vitepress.dev/reference/site-config#head
   vite: {
