@@ -11,9 +11,11 @@
                 Browse a complete library of opinionated Laravel best practices, expert tips & tricks and battle-tested code patterns to level up your development skills fast.
             </span>
             <div class="w-full grid grid-cols-2 gap-6">
-                <AppFormButton>
+
+                <AppFormButton href="/blog">
                     Browse Library
                 </AppFormButton>
+
                 <AppFormButton theme="secondary">
                     Contribute
                 </AppFormButton>
