@@ -18,7 +18,9 @@ export default defineConfig({
   title: "Laravel Best Practices",
   description: "A revival of alexeymezenin's laravel-best-practices repository.",
   srcDir: 'src',
-
+  markdown: {
+    theme: 'github-dark'
+  },
   vite: {
     plugins: [
       // components are auto imported with unplugin, see https://github.com/unplugin/unplugin-vue-components

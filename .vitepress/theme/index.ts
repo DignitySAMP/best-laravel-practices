@@ -5,6 +5,7 @@ import { Theme } from 'vitepress'
 import Layout from './VitepressApp.vue'
 
 import './styles/tailwind.css'
+import './styles/code.css'
 
 export default {
     Layout,

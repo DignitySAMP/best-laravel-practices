@@ -1,4 +1,22 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @source '../../../../src/**/*.md';
 @source '../../**/*.{vue,ts}';
+
+
+/* improves some of the default prose settings, also an example of how to customize it */
+.prose code {
+    padding: 0 0.25rem;
+    border-radius: 0;
+}
+
+.prose code::before,
+.prose code::after {
+    content: "" !important;
+}
+
+.prose pre {
+    border-radius: 0;
+    margin: 0;
+}
