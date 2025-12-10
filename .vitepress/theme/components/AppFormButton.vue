@@ -20,7 +20,7 @@
     const applyTheme = () => {
         const style = [];
 
-        style.push('px-4 py-2 text-center border-b-4 rounded-md transition duration-300');
+        style.push('px-5 py-3 text-center border-b-4 rounded-md font-semibold transition duration-300');
 
         switch(props.theme) {
             case "primary": {
