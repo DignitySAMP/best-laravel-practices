@@ -34,6 +34,6 @@ const func = () => {
 }
 ```
 
-[Go to the api-examples page](/api-examples)
+[Go to the api-examples page](/blog/api-examples)
 
-[Go to the markdown-examples page](/markdown-examples)
+[Go to the markdown-examples page](/blog/markdown-examples)
