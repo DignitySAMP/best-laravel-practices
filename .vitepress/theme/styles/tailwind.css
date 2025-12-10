@@ -4,6 +4,9 @@
 @source '../../../../src/**/*.md';
 @source '../../**/*.{vue,ts}';
 
+:root {
+    scroll-behavior: smooth;
+}
 
 /* improves some of the default prose settings, also an example of how to customize it */
 .prose {
