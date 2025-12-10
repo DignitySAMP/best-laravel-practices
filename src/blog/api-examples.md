@@ -1,4 +1,7 @@
 ---
+title: "API Examples in Vitepress"
+description: "Learn the usage of some of the runtime APIs provided by VitePress"
+date: 2026-09-14T00:00:00.000Z
 outline: deep
 ---
 
