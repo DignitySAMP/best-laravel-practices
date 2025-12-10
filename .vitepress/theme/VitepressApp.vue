@@ -7,7 +7,6 @@
             <Content />
         </AppLayoutDefault>
 
-
         <Transition
             enter-active-class="transition transform duration-300"
             enter-from-class="translate-y-full opacity-0"
