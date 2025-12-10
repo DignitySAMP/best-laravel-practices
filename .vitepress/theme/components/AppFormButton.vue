@@ -24,7 +24,7 @@
 
         switch(props.theme) {
             case "primary": {
-                style.push("bg-red-600 border-red-700 text-red-50 hover:bg-red-500");
+                style.push("bg-laravel border-laravel-dark text-red-50 hover:bg-laravel-light");
                 break;
             }
             case "success": {

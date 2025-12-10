@@ -28,8 +28,8 @@
     const styleSlidingButton = () => {
         const baseTranslate = model.value ? 'translate-x-7' : 'translate-x-0';
         const bgColor = (props.disabled
-            ? model.value ? 'bg-red-500/50' : 'bg-slate-300/50'
-            : model.value ? 'bg-red-600' : 'bg-slate-300'
+            ? model.value ? 'bg-laravel-light' : 'bg-slate-300/50'
+            : model.value ? 'bg-laravel' : 'bg-slate-300'
         );
 
         return [baseTranslate, bgColor].join(' ');

@@ -5,7 +5,7 @@
         <article class="flex flex-col gap-4">
 
             <h1 class="text-7xl font-medium">
-                Write better <span class="text-red-600">Laravel</span> code
+                Write better <span class="text-laravel font-bold">Laravel</span> code
             </h1>
             <span class="text-2xl text-gray-500">
                 Browse a complete library of opinionated Laravel best practices, expert tips & tricks and battle-tested code patterns to level up your development skills fast.

@@ -4,6 +4,12 @@
 @source '../../../../src/**/*.md';
 @source '../../**/*.{vue,ts}';
 
+@theme {
+    --color-laravel: #F05340;
+    --color-laravel-light: #ec6859;
+    --color-laravel-dark: #d13c2b;
+}
+
 :root {
     scroll-behavior: smooth;
 }
