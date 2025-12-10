@@ -3,6 +3,8 @@
         <AppLayoutError v-if="page.isNotFound"/>
         <AppLayoutIndex v-else-if="frontmatter.layout === 'home'" />
         <AppLayoutResource v-else-if="frontmatter.layout === 'resources'" />
+        <AppLayoutResourceView v-else-if="frontmatter.layout === 'view-resource'" />
+        
         <AppLayoutDefault v-else>
             <Content />
         </AppLayoutDefault>
