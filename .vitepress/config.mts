@@ -19,6 +19,7 @@ export default defineConfig({
   title: "Laravel Best Practices",
   description: "A revival of alexeymezenin's laravel-best-practices repository.",
   srcDir: 'src',
+  cleanUrls: true, // remove .html at each page
   markdown: {
     theme: 'github-dark'
   },
@@ -54,5 +55,7 @@ export default defineConfig({
       }),
       tailwindcss()
     ]
-  }
+  },
+  // TODO: add transformPageData to include SEO metadata per indvidiual page
+  // https://vitepress.dev/reference/site-config#transformhead
 })
