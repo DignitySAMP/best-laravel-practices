@@ -1,5 +1,5 @@
 ---
 layout: blog
-title: Blog
+title: Blogs
 description: The latest articles, tutorials, and resources on Laravel development and more.
 ---
