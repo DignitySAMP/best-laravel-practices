@@ -1,13 +1,7 @@
 <template>
     <header class="w-full border-b-2 border-gray-300">
         <nav class="container mx-auto max-w-7xl py-4 grid grid-cols-[auto_1fr_auto]  gap-12">
-
-            <a href="/" class="flex items-center gap-2 w-full">
-                <AppLogo class="size-8"/>
-                <h1 class="text-2xl font-bold tracking-tighter">
-                    Laravel Best Practices
-                </h1>
-            </a>
+            <AppLogo/>
 
             <section class="flex justify-center items-center gap-12 text-gray-600">
 
