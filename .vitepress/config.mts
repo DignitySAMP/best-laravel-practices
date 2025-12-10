@@ -2,6 +2,8 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import { defineConfig } from 'vitepress'
+import tailwindcss from '@tailwindcss/vite'
+
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 
@@ -46,6 +48,7 @@ export default defineConfig({
         // generate an auto-imports shim to aid with 
         dts: resolve(currentDir, 'auto-imports.d.ts'),
       }),
+      tailwindcss()
     ]
   }
 })

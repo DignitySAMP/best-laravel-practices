@@ -4,6 +4,8 @@
 import { Theme } from 'vitepress'
 import Layout from './Layout.vue'
 
+import './styles/tailwind.css'
+
 export default {
     Layout,
     enhanceApp({ app, router, siteData }) {
