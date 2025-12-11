@@ -26,6 +26,8 @@
 import { useData, Content } from 'vitepress'
 const { page, frontmatter } = useData()
 
+import { adjustLocalizationURL, locales } from './composables/locales';
+import { getLanguagePreference } from './composables/cookies';
 
 const showCookieBanner = ref<boolean>(false);
 onMounted(() => {
@@ -36,5 +38,7 @@ onMounted(() => {
             showCookieBanner.value = true;
         }, 500)
     }
+
+    adjustLocalizationURL();
 })
 </script>

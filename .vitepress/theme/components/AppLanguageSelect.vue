@@ -41,6 +41,7 @@ const language = ref<string>(getLanguagePreference());
 const changeLanguage = (lang: string) => {
     setLanguagePreference(lang);
     language.value = lang;
+    adjustLocalizationURL();
 }
 // TODO: give warning incase cookies are disabled that this will not persist.
 </script>
