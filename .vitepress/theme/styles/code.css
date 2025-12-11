@@ -2,7 +2,6 @@
 div[class*="language-"] {
     position: relative;
     /* must be relative to be able to move button to top right*/
-    margin: 1.75em 0;
 }
 
 div[class*="language-"]>pre {
@@ -19,6 +18,7 @@ div[class*="language-"]>button.copy {
     /* apply size and svg as background */
     width: 24px;
     height: 24px;
+    color: #DEDEDE;
     background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23808080' stroke-width='2'%3e%3cpath stroke-linecap='round' stroke-linejoin='round' d='M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2' /%3e%3c/svg%3e") center/contain no-repeat;
 }
 
@@ -30,8 +30,11 @@ div[class*="language-"]>button.copy.copied {
 /* the small text showing which language is being used */
 div[class*="language-"]>span.lang {
     position: absolute;
-    top: -1.25rem;
-    right: 0px;
+    left: .5rem;
+    top: 2px;
+
+    color: #DEDEDE;
+
     z-index: 2;
     font-size: 12px;
     font-weight: 500;
