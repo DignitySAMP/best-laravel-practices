@@ -22,10 +22,7 @@
             </section>
 
             <section class="flex items-center gap-4 text-gray-400">
-                <div class="flex gap-1">
-                    <IconLanguage class="size-5"/>
-                    <IconChevronDown class="size-4"/>
-                </div>
+                <AppLanguageSelect/>
                 <span>
                     <IconSun class="size-5"/>
                 </span>
