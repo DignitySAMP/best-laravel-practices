@@ -48,7 +48,7 @@
                                 v-model="query"
                                 type="text"
                                 placeholder="Search documentation..."
-                                class="flex outline-none text-lg"
+                                class="flex w-full outline-none text-lg"
                                 @keydown.down.prevent="selectNext"
                                 @keydown.up.prevent="selectPrev"
                                 @keydown.enter.prevent="submitSelect"
