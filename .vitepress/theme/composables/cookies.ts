@@ -54,9 +54,9 @@ export function setLanguagePreference(choice: string) {
 export function getLanguagePreference() {
     if (getCookiePreference()) {
         const result = getCookie('language');
-        return result?.length > 0 ? result : 'English';
+        return result?.length > 0 ? result : 'en';
     }
-    return 'English';
+    return 'en';
 }
 
 export function setThemePreference(choice: string) {
