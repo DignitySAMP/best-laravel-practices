@@ -13,6 +13,8 @@ const layoutsDir = resolve(currentDir, 'theme', 'layouts')
 const composablesDir = resolve(currentDir, 'theme', 'composables')
 const utilsDir = resolve(currentDir, 'theme', 'utils')
 
+import { localeMap } from './theme/composables/locales'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'en-GB',
@@ -23,6 +25,7 @@ export default defineConfig({
   markdown: {
     theme: 'gruvbox-dark-soft'
   },
+  locales: localeMap,
   // TODO: add meta tags: https://vitepress.dev/reference/site-config#head
   vite: {
     plugins: [
